@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #71b00b, #129a95);
+}
+
+.bookPage{
+  background-color: #fff;
+  height: 740px;
+  width: 100%;
+  background-image: url(../images/bgimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #a4963d;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 10px 10px 5px black;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.title {
+  color: #fff;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 200px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.caption{
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+.bookButton {
+  border: #ffffff;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 40px;
+  width: 50%;
+  height: 70px;
+  width: 180px;
+  background-color: white;
+}
+
+.bookButton:hover {
+  background-color: black;
+  cursor: pointer; /* Change the cursor on hover to a pointer */
+}
+
+.bookButton:hover .book {
+  color: #ffffff;
+}
+
+.book{
+  padding-top: 20px;
+  text-align: center;
+  justify-self: center;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.form-row {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  max-width: 48%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.select-field,
+.input-field[type="date"] {
+  width: 100%;
+  max-width: 48%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  background-color: #fff;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff6600;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .booking-form {
+    padding: 20px;
+  }
+
+  .input-field,
+  .select-field,
+  .input-field[type="date"] {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .input-field,
+  .select-field,
+  .input-field[type="date"] {
+    font-size: 14px;
+    color:#000
+  }
+}

@@ -1,0 +1,11 @@
+.activeStyle {
+    color: #3861fb;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .inActiveStyle {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+  }

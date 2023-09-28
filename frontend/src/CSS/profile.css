@@ -1,0 +1,130 @@
+.page{
+  align-items: center;
+  background-image: url(../images/bgimg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+  height: 700px;
+  width: 100%;
+}
+
+.user-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .user-profile-card {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 600px;
+  }
+  
+  .user-profile-picture {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .user-profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .user-profile-picture input[type="file"] {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .user-profile-name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .user-profile-email,
+  .user-profile-phone,
+  .user-profile-password {
+    margin-bottom: 10px;
+  }
+  
+  .update-details-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .modal h2 {
+    margin-bottom: 20px;
+  }
+  
+  .modal input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .modal-update-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .modal-close-button {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .user-profile-card {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .user-profile-card {
+      width: 90%;
+    }
+  }
+  
